@@ -18,10 +18,6 @@ module.exports = (opts = {}) => {
     postcssPlugin: 'postcss-hover-focus-visible',
 
     Rule: rule => {
-      if (config.focusVisible) {
-
-      }
-
       if (rule.selector.includes(':hover')) {
         let focuses = []
         for (let selector of rule.selectors) {
