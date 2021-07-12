@@ -1,28 +1,30 @@
 {
-  "name": "postcss-focus",
-  "version": "5.0.1",
-  "description": "PostCSS plugin to add :focus selector to every :hover for keyboard accessibility",
+  "name": "postcss-hover-focus-visible",
+  "version": "1.0.0",
+  "description": "PostCSS plugin to add :focus-visible selector and/or :focus to every :hover, this is for keyboard accessibility",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xanghyr/postcss-hover-focus-visible.git"
+  },
   "keywords": [
     "postcss",
-    "css",
     "postcss-plugin",
     "hover",
+    "focus-visible",
     "focus",
-    "keyboard",
     "accessibility",
-    "a11y"
+    "css"
   ],
-  "author": "Andrey Sitnik <andrey@sitnik.ru>",
+  "author": "Willy Michel <willy3michel@gmail.com>",
   "license": "MIT",
-  "repository": "postcss/postcss-focus",
-  "engines": {
-    "node": ">=10.0"
-  },
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/postcss/"
+  "bugs": {
+    "url": "https://github.com/xanghyr/postcss-hover-focus-visible/issues"
   },
   "peerDependencies": {
-    "postcss": "^8.1.0"
+    "postcss": "^8.0.0"
   }
 }
