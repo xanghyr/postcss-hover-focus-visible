@@ -1,6 +1,6 @@
 {
   "name": "postcss-hover-focus-visible",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "PostCSS plugin to add :focus-visible selector and/or :focus to every :hover, this is for keyboard accessibility",
   "main": "index.js",
   "scripts": {
