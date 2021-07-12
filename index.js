@@ -19,19 +19,31 @@ module.exports = (opts = {}) => {
 
     Rule: rule => {
       if (config.focusVisible) {
-        
+
       }
 
       if (rule.selector.includes(':hover')) {
         let focuses = []
         for (let selector of rule.selectors) {
           if (selector.includes(':hover')) {
-            let replaced = selector.replace(/:hover/g, ':focus-visible')
-            if (!hasAlready(rule.parent, replaced)) {
-              focuses.push(replaced)
+
+            if (config.focusVisible) {
+              let replacedFV = selector.replace(/:hover/g, ':focus-visible')
+              if (!hasAlready(rule.parent, replacedFV)) {
+                focuses.push(replacedFV)
+              }
             }
+
+            if (config.focus) {
+              let replacedF = selector.replace(/:hover/g, ':focus')
+              if (!hasAlready(rule.parent, replacedF)) {
+                focuses.push(replacedF)
+              }
+            }
+
           }
         }
+        
         if (focuses.length) {
           rule.selectors = rule.selectors.concat(focuses)
         }
