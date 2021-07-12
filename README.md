@@ -38,11 +38,11 @@ yarn add -D postcss-hover-focus-visible
 
 **Step 2:** Add the plugin to postCSS plugins list:
 
-```diff
+```js
 var postcssHoverFocus = require('postcss-hover-focus-visible');
 
 postcss([
-  postcssHoverFocus({focusVisible: true}) 
+  postcssHoverFocus({focusVisible: true, focus: false}) 
 ])
 ```
 
